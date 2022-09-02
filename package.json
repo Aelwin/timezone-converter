@@ -16,6 +16,7 @@
     "extends": "standard"
   },
   "dependencies": {
-    "@picocss/pico": "^1.5.3"
+    "@picocss/pico": "^1.5.3",
+    "country-flag-emoji-polyfill": "^0.1.4"
   }
 }
