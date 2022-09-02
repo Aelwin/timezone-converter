@@ -220,5 +220,95 @@
       "capital": "Asunción",
       "currency_code": "PYG",
       "continent": "South America"
+    },
+    {
+      "name": "Bolivia",
+      "dial_code": "+591",
+      "country_code": "BO",
+      "emoji": "🇧🇴",
+      "emoji_unicode": "U+1F1E7 U+1F1F4",
+      "emoji_svg_url": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BO.svg",
+      "timezones": [
+        "America/La_Paz"
+      ],
+      "latlng": [
+        -17,
+        -65
+      ],
+      "capital": "Sucre",
+      "currency_code": "BOB",
+      "continent": "South America"
+    },
+    {
+      "name": "Honduras",
+      "dial_code": "+504",
+      "country_code": "HN",
+      "emoji": "🇭🇳",
+      "emoji_unicode": "U+1F1ED U+1F1F3",
+      "emoji_svg_url": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HN.svg",
+      "timezones": [
+        "America/Tegucigalpa"
+      ],
+      "latlng": [
+        15,
+        -86.5
+      ],
+      "capital": "Tegucigalpa",
+      "currency_code": "HNL",
+      "continent": "North America"
+    },
+    {
+      "name": "Guatemala",
+      "dial_code": "+502",
+      "country_code": "GT",
+      "emoji": "🇬🇹",
+      "emoji_unicode": "U+1F1EC U+1F1F9",
+      "emoji_svg_url": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GT.svg",
+      "timezones": [
+        "America/Guatemala"
+      ],
+      "latlng": [
+        15.5,
+        -90.25
+      ],
+      "capital": "Guatemala City",
+      "currency_code": "GTQ",
+      "continent": "North America"
+    },
+    {
+      "name": "Panama",
+      "dial_code": "+507",
+      "country_code": "PA",
+      "emoji": "🇵🇦",
+      "emoji_unicode": "U+1F1F5 U+1F1E6",
+      "emoji_svg_url": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PA.svg",
+      "timezones": [
+        "America/Panama"
+      ],
+      "latlng": [
+        9,
+        -80
+      ],
+      "capital": "Panama City",
+      "currency_code": "PAB",
+      "continent": "North America"
+    },
+    {
+      "name": "Dominican Republic",
+      "dial_code": "+1849",
+      "country_code": "DO",
+      "emoji": "🇩🇴",
+      "emoji_unicode": "U+1F1E9 U+1F1F4",
+      "emoji_svg_url": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DO.svg",
+      "timezones": [
+        "America/Santo_Domingo"
+      ],
+      "latlng": [
+        19,
+        -70.66666666
+      ],
+      "capital": "Santo Domingo",
+      "currency_code": "DOP",
+      "continent": "North America"
     }
 ]
