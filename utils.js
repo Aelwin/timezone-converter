@@ -11,6 +11,6 @@ export const setInitialDate = () => {
 export function calcHeight (value) {
   const numberOfLineBreaks = (value.match(/\n/g) || []).length
   // min-height + lines x line-height + padding + border
-  const newHeight = 20 + numberOfLineBreaks * 33 + 12 + 2
+  const newHeight = 20 + numberOfLineBreaks * 38 + 12 + 2
   return newHeight
 }
