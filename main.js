@@ -2,6 +2,9 @@ import { toast } from 'https://cdn.skypack.dev/wc-toast' // para sacar un popup 
 import '@picocss/pico/css/pico.min.css'
 import countries from './countries.json'
 import { $, setInitialDate, calcHeight } from './utils.js'
+import { polyfillCountryFlagEmojis } from 'country-flag-emoji-polyfill'
+
+polyfillCountryFlagEmojis()
 
 function changeTimeZone (date, timeZone) {
   const dateToUse = typeof date === 'string' ? new Date(date) : date
