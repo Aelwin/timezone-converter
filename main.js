@@ -29,21 +29,29 @@ $('form').addEventListener('submit', event => {
   const data = Object.fromEntries(new window.FormData(event.target))
   const fechaPrincipal = new Date(data.fecha)
 
-  const paises = []
+  const paises = {}
 
   countries.forEach(country => {
-    // Estos corchetes cogen el primer elemento del array timezones
-    const [timeZone] = country.timezones
+    const { emoji, timezones } = country
+    const [timeZone] = timezones
     const timeInTimeZone = changeTimeZone(fechaPrincipal, timeZone)
-    const pais = { name: country.name, emoji: country.emoji, time: timeInTimeZone }
-    paises.push(pais)
+    const hour = timeInTimeZone.getHours()
+
+    paises[hour] ??= []
+    paises[hour].push({
+      emoji,
+      time: timeInTimeZone
+    })
   })
 
-  paises.sort((a, b) => { return b.time - a.time })
+  const sortedCountryEntries = Object.entries(paises).sort(([timeA], [timeB]) => timeB - timeA)
 
-  const html = paises.map(pais => {
-    const { name, emoji, time } = pais
-    return `${name} ${emoji} ${transformDateToString(time)}`
+  const html = sortedCountryEntries.map(([, countries]) => {
+    const flags = countries.map(country => `${country.emoji}`).join(' ')
+    const [country] = countries
+    const { time } = country
+
+    return `${flags} ${transformDateToString(time)}`
   }).join('\n')
 
   // Copia al portapapeles el texto y sacamos popup de aviso
