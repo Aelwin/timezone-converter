@@ -1,0 +1,1 @@
+Aplicación creada con Vite para convertir una fecha a diferentes zonas horarias, en este caso en concreto de países hispanohablantes.
